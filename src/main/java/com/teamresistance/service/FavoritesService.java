@@ -14,6 +14,7 @@ public class FavoritesService {
 
     public List<ZipCodesItem> getParkingLotInfo(int zipCode, int radius) throws JsonProcessingException {
 
+        //create local variables
         ZipCodesItem items = new ZipCodesItem();
         List<ZipCodesItem> list = new ArrayList<>();
 
@@ -22,7 +23,6 @@ public class FavoritesService {
 
         Client client = ClientBuilder.newClient();
         WebTarget target =
-
                 client.target("https://www.zipcodeapi.com/rest/" + apiKey
                         + "/radius." + format + "/"+ zipCode + "/" + raidus + "/" + units + "?minimal");
 

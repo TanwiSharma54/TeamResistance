@@ -36,11 +36,11 @@ public class SearchServlet extends HttpServlet {
        // User loggedInUser = (User)userDao.getByProperty("userName", req.getRemoteUser());
 
         //get user input
-        String searchTerm = req.getParameter("zipcode");
-        String searchType = req.getParameter("radius");
+        String zipCode = req.getParameter("zipcode");
+        String radius = req.getParameter("radius");
 
-        int zipCode = Integer.parseInt(searchTerm);
-        int radius = Integer.parseInt(searchType);
+        int zipCode = Integer.parseInt(zipCode);
+        int radius = Integer.parseInt(radius);
 
         //if user input is provided, return results matching the input
         if (!searchTerm.isEmpty() && !searchType.isEmpty()) {
