@@ -1,0 +1,41 @@
+body {
+  background-color: #c1f9c6;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+}
+
+.jumbotron {
+    background-image: url("images/yugioh1.png");
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.navbar, #mySearch {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#myForm, #cardForm {
+    margin: auto;
+}
+
+#myTable, #myInput, #mySearch {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.validations {
+    margin-left: 1em;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    line-height: 2em;
+    justify-content: center;
+}
