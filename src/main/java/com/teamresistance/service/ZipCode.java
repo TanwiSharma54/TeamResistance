@@ -1,8 +1,9 @@
-package com.zipecodeapi;
+package com.teamresistance.service;
 
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.annotation.Generated;
+import java.util.List;
 
 @Generated("com.robohorse.robopojogenerator")
 public class ZipCode{

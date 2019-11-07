@@ -18,34 +18,22 @@
             </div>
             <div class="row">
                     <c:choose>
-                        <c:when test="${!empty(cards)}">
+                        <c:when test="${!empty(places)}">
                             <table id="myTable" class="table table-dark table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Type</th>
-                                        <th>Rarity</th>
-                                        <th>Set</th>
-                                        <th>No.</th>
-                                        <th>Price</th>
-                                        <th>Qty</th>
+                                        <th>zipcode</th>
                                     </tr>
                                 </thead>
-                                <c:forEach var="card" items="${cards}">
+                                <c:forEach var="place" items="${places}">
                                     <tr>
-                                        <td class="tbColumns">${card.cardName}</td>
-                                        <td class="tbColumns">${card.cardType}</td>
-                                        <td class="tbColumns">${card.cardRarity}</td>
-                                        <td class="tbColumns">${card.cardSet}</td>
-                                        <td class="tbColumns">${card.cardIndex}</td>
-                                        <td class="tbColumns">${card.price}</td>
-                                        <td class="tbColumns">${card.quantity}</td>
+                                        <td class="tbColumns">${place.zipCode}</td>
                                     </tr>
                                 </c:forEach>
                             </table>
                         </c:when>
                         <c:otherwise>
-                            <p class="validations">No cards were found</p>
+                            <p class="validations">No zipcodes were found</p>
                         </c:otherwise>
                     </c:choose>
             </div>
