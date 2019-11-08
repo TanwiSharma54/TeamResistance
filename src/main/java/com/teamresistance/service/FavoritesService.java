@@ -8,11 +8,14 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FavoritesService {
 
     public List<ZipCodesItem> getParkingLotInfo(int zipCode, int radius) throws JsonProcessingException {
+
+        String apiKey = "C6duubd0kQKxJEOmFShO87kDSvVP6U2gpTd65fh7wMBironF9up5xyisynI21Ep9";
 
         //create local variables
         ZipCodesItem items = new ZipCodesItem();
@@ -24,7 +27,7 @@ public class FavoritesService {
         Client client = ClientBuilder.newClient();
         WebTarget target =
                 client.target("https://www.zipcodeapi.com/rest/" + apiKey
-                        + "/radius." + format + "/"+ zipCode + "/" + raidus + "/" + units + "?minimal");
+                        + "/radius." + format + "/"+ zipCode + "/" + radius + "/" + units + "?minimal");
 
         //specify the type of data to get back and get the response
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);

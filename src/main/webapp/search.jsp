@@ -9,19 +9,24 @@
             <div class="row">
                 <c:import url="navbar.jsp"/>
             </div>
+            <FORM id="myForm" ACTION="search" METHOD="GET">
 
-            <form class="form-check-inline" action="searchCards" method="GET" class="needs-validation" novalidate>
-                <div id="mySearch" class="input-group mb-3">
+                <div class="form-group">
                     <label for="zipCode">Please Enter a zipCode</label>
-                    <input type="searchTerm" class="form-control" id="zipCode" placeholder="Enter zipCode" name="zipCode" aria-label="zipCode" aria-describedby="basic-addon2">
-                    <label for="radius">Please Enter a radius</label>
-                    <input type="searchTerm" class="form-control" id="radius" placeholder="Enter radius" name="radius" aria-label="radius" aria-describedby="basic-addon2">
-
-                    <div class="input-group-append">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
+                    <input type="text" class="form-control" id="zipCode" placeholder="Enter zipCode" name="zipCode" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
-            </form><br/>
+
+                <div class="form-group">
+                    <label for="radius">Please Enter a radius</label>
+                    <input type="radius" class="form-control" id="radius" placeholder="Enter radius" name="radius" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button><br />
+            </FORM>
 
             <footer class="row">
                 <c:import url="footer.jsp"/>

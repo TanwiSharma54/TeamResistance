@@ -1,5 +1,5 @@
 body {
-  background-color: #c1f9c6;
+  background-color: lightgreen;
 }
 
 .container {
@@ -8,7 +8,7 @@ body {
 }
 
 .jumbotron {
-    background-image: url("images/yugioh1.png");
+    background-image: url("images/parkingLots.png");
     width: 100%;
     height: auto;
     margin-bottom: 0px;

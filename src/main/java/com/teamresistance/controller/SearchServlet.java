@@ -31,21 +31,17 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        HttpSession session = req.getSession();
-
-       // User loggedInUser = (User)userDao.getByProperty("userName", req.getRemoteUser());
-
         //get user input
-        String zipCode = req.getParameter("zipcode");
-        String radius = req.getParameter("radius");
+        String zipInput = req.getParameter("zipCode");
+        String radInput = req.getParameter("radius");
 
-        int zipCode = Integer.parseInt(zipCode);
-        int radius = Integer.parseInt(radius);
 
         //if user input is provided, return results matching the input
-        if (!searchTerm.isEmpty() && !searchType.isEmpty()) {
+        if (zipInput != null && radInput != null) {
             try {
 
+                int zipCode = Integer.parseInt(zipInput);
+                int radius = Integer.parseInt(radInput);
 
                 FavoritesService newService = new FavoritesService();
                 List<ZipCodesItem> places = newService.getParkingLotInfo(zipCode, radius);
@@ -53,10 +49,8 @@ public class SearchServlet extends HttpServlet {
                 req.setAttribute("places", places);
 
             } catch (Exception e) {
-                e.printStackTrace();
+               e.printStackTrace();
             }
-        } else { //otherwise, return all cards in the user's database
-            req.setAttribute("places", "");
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
