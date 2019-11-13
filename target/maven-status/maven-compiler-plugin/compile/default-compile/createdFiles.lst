@@ -3,6 +3,7 @@ com/teamresistance/service/ZipCode.class
 com/teamresistance/persistence/GenericDao.class
 com/teamresistance/controller/SearchServlet.class
 com/teamresistance/entity/Favorites.class
+com/teamresistance/controller/SignUp.class
 com/teamresistance/service/ZipCodesItem.class
 com/teamresistance/service/FavoritesService.class
 com/teamresistance/entity/User.class
