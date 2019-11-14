@@ -3,10 +3,14 @@ create schema favorite_places collate utf8mb4_0900_ai_ci;
 
 create table favorites
 (
-    id int auto_increment
+    id           int auto_increment
         primary key,
-    parkingLotId int null,
-    user_id int null,
+    parkingLotId int(10)      null,
+    name         varchar(64)  null,
+    description  varchar(120) null,
+    price        double       null,
+    available    int          null,
+    user_id      int          null,
     constraint favorites_user_user_id_fk
         foreign key (user_id) references user (user_id)
             on update cascade on delete cascade
