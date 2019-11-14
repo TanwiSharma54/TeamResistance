@@ -1,0 +1,592 @@
+[DEBUG] 2019-11-14 15:20:36.456 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2019-11-14 15:20:36.467 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2019-11-14 15:20:36.478 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2019-11-14 15:20:36.649 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2019-11-14 15:20:36.661 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2019-11-14 15:20:37.129 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2019-11-14 15:20:37.129 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2019-11-14 15:20:37.151 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2019-11-14 15:20:37.882 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2019-11-14 15:20:37.904 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2019-11-14 15:20:37.906 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2019-11-14 15:20:37.927 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2019-11-14 15:20:37.964 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@29182679
+[DEBUG] 2019-11-14 15:20:37.964 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@29182679
+[DEBUG] 2019-11-14 15:20:37.964 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@29182679
+[DEBUG] 2019-11-14 15:20:37.964 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6a84bc2a
+[DEBUG] 2019-11-14 15:20:37.965 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@27068a50
+[DEBUG] 2019-11-14 15:20:37.965 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@48bfb884
+[DEBUG] 2019-11-14 15:20:37.966 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7c974942
+[DEBUG] 2019-11-14 15:20:37.966 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7c974942
+[DEBUG] 2019-11-14 15:20:37.967 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7c974942
+[DEBUG] 2019-11-14 15:20:37.967 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@6b580b88
+[DEBUG] 2019-11-14 15:20:37.968 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@6b580b88
+[DEBUG] 2019-11-14 15:20:37.968 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6b580b88
+[DEBUG] 2019-11-14 15:20:37.969 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6f8f8a80
+[DEBUG] 2019-11-14 15:20:37.969 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6f8f8a80
+[DEBUG] 2019-11-14 15:20:37.969 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6f8f8a80
+[DEBUG] 2019-11-14 15:20:37.969 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@7004e3d
+[DEBUG] 2019-11-14 15:20:37.972 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@7004e3d
+[DEBUG] 2019-11-14 15:20:37.972 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7004e3d
+[DEBUG] 2019-11-14 15:20:37.973 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@25d958c6
+[DEBUG] 2019-11-14 15:20:37.973 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@25d958c6
+[DEBUG] 2019-11-14 15:20:37.973 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@25d958c6
+[DEBUG] 2019-11-14 15:20:37.975 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@695a69a1
+[DEBUG] 2019-11-14 15:20:37.975 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@695a69a1
+[DEBUG] 2019-11-14 15:20:37.975 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@695a69a1
+[DEBUG] 2019-11-14 15:20:37.975 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@332f25c8
+[DEBUG] 2019-11-14 15:20:37.975 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@332f25c8
+[DEBUG] 2019-11-14 15:20:37.976 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@332f25c8
+[DEBUG] 2019-11-14 15:20:37.977 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@69cac930
+[DEBUG] 2019-11-14 15:20:37.977 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@69cac930
+[DEBUG] 2019-11-14 15:20:37.977 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4a03bb68
+[DEBUG] 2019-11-14 15:20:37.978 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4a03bb68
+[DEBUG] 2019-11-14 15:20:37.978 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@6f099cef
+[DEBUG] 2019-11-14 15:20:37.978 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@6f099cef
+[DEBUG] 2019-11-14 15:20:37.978 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7fedfe27
+[DEBUG] 2019-11-14 15:20:37.979 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@56ccd751
+[DEBUG] 2019-11-14 15:20:37.979 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@59712875
+[DEBUG] 2019-11-14 15:20:37.980 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@59712875
+[DEBUG] 2019-11-14 15:20:37.980 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@37a64f9d
+[DEBUG] 2019-11-14 15:20:37.980 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@37a64f9d
+[DEBUG] 2019-11-14 15:20:37.995 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@22fba58c
+[DEBUG] 2019-11-14 15:20:37.996 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@22fba58c
+[DEBUG] 2019-11-14 15:20:38.000 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6079cf5
+[DEBUG] 2019-11-14 15:20:38.001 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6079cf5
+[DEBUG] 2019-11-14 15:20:38.007 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@189b5fb1
+[DEBUG] 2019-11-14 15:20:38.007 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@189b5fb1
+[DEBUG] 2019-11-14 15:20:38.010 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@1c025cb
+[DEBUG] 2019-11-14 15:20:38.010 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@1c025cb
+[DEBUG] 2019-11-14 15:20:38.015 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@512d4583
+[DEBUG] 2019-11-14 15:20:38.015 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@512d4583
+[DEBUG] 2019-11-14 15:20:38.018 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@64f555e7
+[DEBUG] 2019-11-14 15:20:38.019 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@64f555e7
+[DEBUG] 2019-11-14 15:20:38.020 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2687f956
+[DEBUG] 2019-11-14 15:20:38.022 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2687f956
+[DEBUG] 2019-11-14 15:20:38.023 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@aced190
+[DEBUG] 2019-11-14 15:20:38.023 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@aced190
+[DEBUG] 2019-11-14 15:20:38.025 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@21ab988f
+[DEBUG] 2019-11-14 15:20:38.025 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@21ab988f
+[DEBUG] 2019-11-14 15:20:38.027 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@a50ae65
+[DEBUG] 2019-11-14 15:20:38.028 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@a50ae65
+[DEBUG] 2019-11-14 15:20:38.028 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@a50ae65
+[DEBUG] 2019-11-14 15:20:38.030 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5972d253
+[DEBUG] 2019-11-14 15:20:38.030 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@6ef81f31
+[DEBUG] 2019-11-14 15:20:38.030 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6ef81f31
+[DEBUG] 2019-11-14 15:20:38.035 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6ef81f31
+[DEBUG] 2019-11-14 15:20:38.036 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6a969fb8
+[DEBUG] 2019-11-14 15:20:38.037 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@27aae97b
+[DEBUG] 2019-11-14 15:20:38.037 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@27aae97b
+[DEBUG] 2019-11-14 15:20:38.038 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@5dc3fcb7
+[DEBUG] 2019-11-14 15:20:38.042 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5dc3fcb7
+[DEBUG] 2019-11-14 15:20:38.042 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6ff37443
+[DEBUG] 2019-11-14 15:20:38.042 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6ff37443
+[DEBUG] 2019-11-14 15:20:38.043 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@57b9e423
+[DEBUG] 2019-11-14 15:20:38.043 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@57b9e423
+[DEBUG] 2019-11-14 15:20:38.044 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2eb79cbe
+[DEBUG] 2019-11-14 15:20:38.044 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2eb79cbe
+[DEBUG] 2019-11-14 15:20:38.044 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6b63d445
+[DEBUG] 2019-11-14 15:20:38.047 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@6050462a
+[DEBUG] 2019-11-14 15:20:38.047 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@6050462a
+[DEBUG] 2019-11-14 15:20:38.047 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@6050462a
+[DEBUG] 2019-11-14 15:20:38.048 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@34523d46
+[DEBUG] 2019-11-14 15:20:38.048 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@34523d46
+[DEBUG] 2019-11-14 15:20:38.051 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@34523d46
+[DEBUG] 2019-11-14 15:20:38.051 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@3af356f
+[DEBUG] 2019-11-14 15:20:38.052 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@2b0b4d53
+[DEBUG] 2019-11-14 15:20:38.052 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@d1a10ac
+[DEBUG] 2019-11-14 15:20:38.052 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@d1a10ac
+[DEBUG] 2019-11-14 15:20:38.052 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@d1a10ac
+[DEBUG] 2019-11-14 15:20:38.055 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@79a1728c
+[DEBUG] 2019-11-14 15:20:38.055 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@79a1728c
+[DEBUG] 2019-11-14 15:20:38.055 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@79a1728c
+[DEBUG] 2019-11-14 15:20:38.056 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@3005db4a
+[DEBUG] 2019-11-14 15:20:38.056 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@52fc5eb1
+[DEBUG] 2019-11-14 15:20:38.057 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@27f74733
+[DEBUG] 2019-11-14 15:20:38.057 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@27f74733
+[DEBUG] 2019-11-14 15:20:38.057 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@4a29f290
+[DEBUG] 2019-11-14 15:20:38.058 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@5ee34b1b
+[DEBUG] 2019-11-14 15:20:38.063 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5ee34b1b
+[DEBUG] 2019-11-14 15:20:38.064 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@4cd1c1dc
+[DEBUG] 2019-11-14 15:20:38.065 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4cd1c1dc
+[DEBUG] 2019-11-14 15:20:38.065 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@659a2455
+[DEBUG] 2019-11-14 15:20:38.066 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6f8e0cee
+[DEBUG] 2019-11-14 15:20:38.068 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@d176a31
+[DEBUG] 2019-11-14 15:20:38.072 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@5cf87cfd
+[DEBUG] 2019-11-14 15:20:38.075 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@5cf87cfd
+[DEBUG] 2019-11-14 15:20:38.075 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@383790cf
+[DEBUG] 2019-11-14 15:20:38.077 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@74971ed9
+[DEBUG] 2019-11-14 15:20:38.081 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@131fcb6f
+[DEBUG] 2019-11-14 15:20:38.081 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@ccd1bc3
+[DEBUG] 2019-11-14 15:20:38.081 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@878537d
+[DEBUG] 2019-11-14 15:20:38.081 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4455f57d
+[DEBUG] 2019-11-14 15:20:38.081 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@29fc1a2b
+[DEBUG] 2019-11-14 15:20:38.081 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4d0b0fd4
+[DEBUG] 2019-11-14 15:20:38.163 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2019-11-14 15:20:38.171 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2019-11-14 15:20:38.174 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-11-14 15:20:38.174 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-11-14 15:20:38.176 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2019-11-14 15:20:38.177 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2019-11-14 15:20:38.177 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2019-11-14 15:20:38.179 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-11-14 15:20:38.181 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2019-11-14 15:20:38.182 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2019-11-14 15:20:38.182 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2019-11-14 15:20:38.182 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2019-11-14 15:20:38.182 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-11-14 15:20:38.183 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2019-11-14 15:20:38.187 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/favorite_places
+[INFO ] 2019-11-14 15:20:38.188 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2019-11-14 15:20:38.188 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2019-11-14 15:20:38.501 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2019-11-14 15:20:39.217 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.17
+      major : 8
+      minor : 0
+[DEBUG] 2019-11-14 15:20:39.226 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2019-11-14 15:20:39.227 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2019-11-14 15:20:39.277 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2019-11-14 15:20:39.297 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2019-11-14 15:20:39.339 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2019-11-14 15:20:39.455 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2019-11-14 15:20:39.464 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@472698d] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7b7683d4]
+[DEBUG] 2019-11-14 15:20:39.686 [main] AnnotationBinder - Binding entity from annotated class: com.teamresistance.entity.Favorites
+[DEBUG] 2019-11-14 15:20:39.795 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-11-14 15:20:39.802 [main] EntityBinder - Import with entity name Favorites
+[DEBUG] 2019-11-14 15:20:39.847 [main] EntityBinder - Bind entity com.teamresistance.entity.Favorites on table favorites
+[DEBUG] 2019-11-14 15:20:39.966 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(favorites), mappingColumn=Id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:39.969 [main] PropertyBinder - MetadataSourceProcessor property Id with lazy=false
+[DEBUG] 2019-11-14 15:20:39.970 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.Favorites:Id]
+[DEBUG] 2019-11-14 15:20:39.971 [main] SimpleValueBinder - building SimpleValue for Id
+[DEBUG] 2019-11-14 15:20:39.973 [main] PropertyBinder - Building property Id
+[DEBUG] 2019-11-14 15:20:39.975 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(Id)]), Id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-11-14 15:20:39.976 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(favorites), mappingColumn=available, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:39.978 [main] PropertyBinder - MetadataSourceProcessor property availableLots with lazy=false
+[DEBUG] 2019-11-14 15:20:39.978 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.Favorites:availableLots]
+[DEBUG] 2019-11-14 15:20:39.978 [main] SimpleValueBinder - building SimpleValue for availableLots
+[DEBUG] 2019-11-14 15:20:39.978 [main] PropertyBinder - Building property availableLots
+[DEBUG] 2019-11-14 15:20:39.978 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(favorites), mappingColumn=description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:39.978 [main] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2019-11-14 15:20:39.978 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.Favorites:description]
+[DEBUG] 2019-11-14 15:20:39.978 [main] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2019-11-14 15:20:39.979 [main] PropertyBinder - Building property description
+[DEBUG] 2019-11-14 15:20:39.979 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(favorites), mappingColumn=name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:39.981 [main] PropertyBinder - MetadataSourceProcessor property name with lazy=false
+[DEBUG] 2019-11-14 15:20:39.981 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.Favorites:name]
+[DEBUG] 2019-11-14 15:20:39.981 [main] SimpleValueBinder - building SimpleValue for name
+[DEBUG] 2019-11-14 15:20:39.982 [main] PropertyBinder - Building property name
+[DEBUG] 2019-11-14 15:20:39.982 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(favorites), mappingColumn=parkingLotId, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:39.982 [main] PropertyBinder - MetadataSourceProcessor property parkingLotId with lazy=false
+[DEBUG] 2019-11-14 15:20:39.982 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.Favorites:parkingLotId]
+[DEBUG] 2019-11-14 15:20:39.982 [main] SimpleValueBinder - building SimpleValue for parkingLotId
+[DEBUG] 2019-11-14 15:20:39.982 [main] PropertyBinder - Building property parkingLotId
+[DEBUG] 2019-11-14 15:20:39.982 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(favorites), mappingColumn=price, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:39.982 [main] PropertyBinder - MetadataSourceProcessor property price with lazy=false
+[DEBUG] 2019-11-14 15:20:39.982 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.Favorites:price]
+[DEBUG] 2019-11-14 15:20:39.982 [main] SimpleValueBinder - building SimpleValue for price
+[DEBUG] 2019-11-14 15:20:39.982 [main] PropertyBinder - Building property price
+[DEBUG] 2019-11-14 15:20:39.986 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-11-14 15:20:39.987 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(favorites), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:39.998 [main] PropertyBinder - Building property user
+[DEBUG] 2019-11-14 15:20:39.999 [main] AnnotationBinder - Binding entity from annotated class: com.teamresistance.entity.User
+[DEBUG] 2019-11-14 15:20:40.003 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-11-14 15:20:40.003 [main] EntityBinder - Import with entity name User
+[DEBUG] 2019-11-14 15:20:40.003 [main] EntityBinder - Bind entity com.teamresistance.entity.User on table user
+[DEBUG] 2019-11-14 15:20:40.009 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=userID, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:40.009 [main] PropertyBinder - MetadataSourceProcessor property userID with lazy=false
+[DEBUG] 2019-11-14 15:20:40.010 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.User:userID]
+[DEBUG] 2019-11-14 15:20:40.010 [main] SimpleValueBinder - building SimpleValue for userID
+[DEBUG] 2019-11-14 15:20:40.010 [main] PropertyBinder - Building property userID
+[DEBUG] 2019-11-14 15:20:40.010 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(userID)]), userID, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-11-14 15:20:40.010 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-11-14 15:20:40.010 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=favorites, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:40.012 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:40.042 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:40.042 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=favorites_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:40.043 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='favorites_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-11-14 15:20:40.043 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-11-14 15:20:40.043 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-11-14 15:20:40.044 [main] CollectionBinder - Collection role: com.teamresistance.entity.User.favorites
+[DEBUG] 2019-11-14 15:20:40.045 [main] PropertyBinder - Building property favorites
+[DEBUG] 2019-11-14 15:20:40.045 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=passWord, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:40.071 [main] PropertyBinder - MetadataSourceProcessor property passWord with lazy=false
+[DEBUG] 2019-11-14 15:20:40.071 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.User:passWord]
+[DEBUG] 2019-11-14 15:20:40.071 [main] SimpleValueBinder - building SimpleValue for passWord
+[DEBUG] 2019-11-14 15:20:40.072 [main] PropertyBinder - Building property passWord
+[DEBUG] 2019-11-14 15:20:40.072 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=userName, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-11-14 15:20:40.072 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2019-11-14 15:20:40.072 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.teamresistance.entity.User:userName]
+[DEBUG] 2019-11-14 15:20:40.072 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2019-11-14 15:20:40.072 [main] PropertyBinder - Building property userName
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for Id
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for availableLots
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for name
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for parkingLotId
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for price
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for userID
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for passWord
+[DEBUG] 2019-11-14 15:20:40.073 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2019-11-14 15:20:40.084 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [favorites]
+[DEBUG] 2019-11-14 15:20:40.084 [main] PrimaryKey - Forcing column [userid] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2019-11-14 15:20:40.084 [main] CollectionSecondPass - Second pass for collection: com.teamresistance.entity.User.favorites
+[DEBUG] 2019-11-14 15:20:40.088 [main] CollectionBinder - Binding a OneToMany: com.teamresistance.entity.User.favorites through a foreign key
+[DEBUG] 2019-11-14 15:20:40.088 [main] CollectionBinder - Mapping collection: com.teamresistance.entity.User.favorites -> favorites
+[DEBUG] 2019-11-14 15:20:40.089 [main] TableBinder - Retrieving property com.teamresistance.entity.Favorites.user
+[DEBUG] 2019-11-14 15:20:40.089 [main] CollectionSecondPass - Mapped collection key: user_userID, one-to-many: com.teamresistance.entity.Favorites
+[DEBUG] 2019-11-14 15:20:40.089 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.teamresistance.entity.User
+[DEBUG] 2019-11-14 15:20:40.092 [main] InFlightMetadataCollectorImpl - Resolving reference to class: com.teamresistance.entity.User
+[DEBUG] 2019-11-14 15:20:40.208 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - SessionFactory name : null
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Statistics: disabled
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2019-11-14 15:20:40.209 [main] Settings - Default null ordering: NONE
+[DEBUG] 2019-11-14 15:20:40.210 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2019-11-14 15:20:40.210 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2019-11-14 15:20:40.210 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2019-11-14 15:20:40.210 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2019-11-14 15:20:40.214 [main] Settings - Query language substitutions: {}
+[DEBUG] 2019-11-14 15:20:40.215 [main] Settings - Named query checking : enabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Second-level cache: disabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - JDBC batch size: 15
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - JPA compliance - query : 
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2019-11-14 15:20:40.216 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2019-11-14 15:20:40.282 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2019-11-14 15:20:40.310 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2019-11-14 15:20:40.310 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/home/student/intellij/lib/idea_rt.jar:/home/student/intellij/plugins/junit/lib/junit-rt.jar:/home/student/intellij/plugins/junit/lib/junit5-rt.jar:/home/student/IdeaProjects/parkingLots/target/test-classes:/home/student/IdeaProjects/parkingLots/target/classes:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/org/glassfish/jersey/core/jersey-client/2.29.1/jersey-client-2.29.1.jar:/home/student/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/home/student/.m2/repository/org/glassfish/jersey/core/jersey-common/2.29.1/jersey-common-2.29.1.jar:/home/student/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/student/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/student/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/home/student/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.29.1/jersey-hk2-2.29.1.jar:/home/student/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/home/student/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/home/student/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/home/student/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/home/student/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.29.1/jersey-container-servlet-2.29.1.jar:/home/student/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.29.1/jersey-container-servlet-core-2.29.1.jar:/home/student/.m2/repository/org/glassfish/jersey/core/jersey-server/2.29.1/jersey-server-2.29.1.jar:/home/student/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.29.1/jersey-media-jaxb-2.29.1.jar:/home/student/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/student/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar:/home/student/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar:/home/student/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit5 com.teamresistance.service.FavoritesServiceTest,testInsert, jdk.debug=release, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2019-07-16, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.4+11-post-Ubuntu-1ubuntu218.04.3, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.0.0-36-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/favorite_places, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.4, user.dir=/home/student/IdeaProjects/parkingLots, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@433c6abb, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.4+11-post-Ubuntu-1ubuntu218.04.3, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/favorite_places, java.class.version=55.0}
+[DEBUG] 2019-11-14 15:20:40.332 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2019-11-14 15:20:40.332 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2019-11-14 15:20:40.335 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2019-11-14 15:20:40.335 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@472698d] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@32fa809f]
+[DEBUG] 2019-11-14 15:20:40.455 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.teamresistance.entity.User] is safe
+[DEBUG] 2019-11-14 15:20:40.455 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.teamresistance.entity.User
+[DEBUG] 2019-11-14 15:20:40.479 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.teamresistance.entity.User] is safe
+[DEBUG] 2019-11-14 15:20:40.479 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.teamresistance.entity.User
+[DEBUG] 2019-11-14 15:20:40.764 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.teamresistance.entity.Favorites] is safe
+[DEBUG] 2019-11-14 15:20:40.770 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.teamresistance.entity.Favorites
+[DEBUG] 2019-11-14 15:20:40.771 [main] ClassLoaderAccessImpl - Not known whether passed class name [com.teamresistance.entity.Favorites] is safe
+[DEBUG] 2019-11-14 15:20:40.772 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.teamresistance.entity.Favorites
+[DEBUG] 2019-11-14 15:20:40.838 [main] AbstractCollectionPersister - Static SQL for collection: com.teamresistance.entity.User.favorites
+[DEBUG] 2019-11-14 15:20:40.839 [main] AbstractCollectionPersister -  Row insert: update favorites set user_userID=? where Id=?
+[DEBUG] 2019-11-14 15:20:40.839 [main] AbstractCollectionPersister -  Row update: update favorites set  where Id=?
+[DEBUG] 2019-11-14 15:20:40.839 [main] AbstractCollectionPersister -  Row delete: update favorites set user_userID=null where user_userID=? and Id=?
+[DEBUG] 2019-11-14 15:20:40.839 [main] AbstractCollectionPersister -  One-shot delete: update favorites set user_userID=null where user_userID=?
+[DEBUG] 2019-11-14 15:20:40.842 [main] AbstractEntityPersister - Static SQL for entity: com.teamresistance.entity.User
+[DEBUG] 2019-11-14 15:20:40.842 [main] AbstractEntityPersister -  Version select: select userID from user where userID =?
+[DEBUG] 2019-11-14 15:20:40.842 [main] AbstractEntityPersister -  Snapshot select: select user_.userID, user_.passWord as passWord2_1_, user_.userName as userName3_1_ from user user_ where user_.userID=?
+[DEBUG] 2019-11-14 15:20:40.842 [main] AbstractEntityPersister -  Insert 0: insert into user (passWord, userName, userID) values (?, ?, ?)
+[DEBUG] 2019-11-14 15:20:40.842 [main] AbstractEntityPersister -  Update 0: update user set passWord=?, userName=? where userID=?
+[DEBUG] 2019-11-14 15:20:40.842 [main] AbstractEntityPersister -  Delete 0: delete from user where userID=?
+[DEBUG] 2019-11-14 15:20:40.842 [main] AbstractEntityPersister -  Identity insert: insert into user (passWord, userName) values (?, ?)
+[DEBUG] 2019-11-14 15:20:40.998 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4391a2d8]
+[DEBUG] 2019-11-14 15:20:41.000 [main] MetamodelGraphWalker - Visiting attribute path : favorites
+[DEBUG] 2019-11-14 15:20:41.011 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5190010f]
+[DEBUG] 2019-11-14 15:20:41.013 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d4d8579]
+[DEBUG] 2019-11-14 15:20:41.015 [main] MetamodelGraphWalker - Visiting attribute path : favorites.availableLots
+[DEBUG] 2019-11-14 15:20:41.015 [main] MetamodelGraphWalker - Visiting attribute path : favorites.description
+[DEBUG] 2019-11-14 15:20:41.015 [main] MetamodelGraphWalker - Visiting attribute path : favorites.name
+[DEBUG] 2019-11-14 15:20:41.015 [main] MetamodelGraphWalker - Visiting attribute path : favorites.parkingLotId
+[DEBUG] 2019-11-14 15:20:41.015 [main] MetamodelGraphWalker - Visiting attribute path : favorites.price
+[DEBUG] 2019-11-14 15:20:41.016 [main] MetamodelGraphWalker - Visiting attribute path : favorites.user
+[DEBUG] 2019-11-14 15:20:41.017 [main] MetamodelGraphWalker - Property path deemed to be circular : favorites.user
+[DEBUG] 2019-11-14 15:20:41.017 [main] MetamodelGraphWalker - Visiting attribute path : passWord
+[DEBUG] 2019-11-14 15:20:41.017 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-11-14 15:20:41.019 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-11-14 15:20:41.035 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-11-14 15:20:41.041 [main] LoadPlanTreePrinter - LoadPlan(entity=com.teamresistance.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.teamresistance.entity.User, querySpaceUid=<gen:0>, path=com.teamresistance.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.teamresistance.entity.User.favorites, querySpaceUid=<gen:1>, path=com.teamresistance.entity.User.favorites)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.teamresistance.entity.Favorites, querySpaceUid=<gen:2>, path=com.teamresistance.entity.User.favorites.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.teamresistance.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userID1_1_0_}
+          - JOIN (JoinDefinedByMetadata(favorites)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.teamresistance.entity.User.favorites)
+                - SQL table alias mapping - favorites1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_use7_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - Id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.teamresistance.entity.Favorites)
+                      - SQL table alias mapping - favorites1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {Id1_0_2_}
+
+[DEBUG] 2019-11-14 15:20:41.053 [main] EntityLoader - Static select for entity com.teamresistance.entity.User [NONE]: select user0_.userID as userID1_1_0_, user0_.passWord as passWord2_1_0_, user0_.userName as userName3_1_0_, favorites1_.user_userID as user_use7_0_1_, favorites1_.Id as Id1_0_1_, favorites1_.Id as Id1_0_2_, favorites1_.available as availabl2_0_2_, favorites1_.description as descript3_0_2_, favorites1_.name as name4_0_2_, favorites1_.parkingLotId as parkingL5_0_2_, favorites1_.price as price6_0_2_, favorites1_.user_userID as user_use7_0_2_ from user user0_ left outer join favorites favorites1_ on user0_.userID=favorites1_.user_userID where user0_.userID=?
+[DEBUG] 2019-11-14 15:20:41.053 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3ba1308d]
+[DEBUG] 2019-11-14 15:20:41.053 [main] MetamodelGraphWalker - Visiting attribute path : favorites
+[DEBUG] 2019-11-14 15:20:41.055 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@235c997d]
+[DEBUG] 2019-11-14 15:20:41.055 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36bed37a]
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Visiting attribute path : favorites.availableLots
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Visiting attribute path : favorites.description
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Visiting attribute path : favorites.name
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Visiting attribute path : favorites.parkingLotId
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Visiting attribute path : favorites.price
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Visiting attribute path : favorites.user
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Property path deemed to be circular : favorites.user
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Visiting attribute path : passWord
+[DEBUG] 2019-11-14 15:20:41.056 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-11-14 15:20:41.056 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-11-14 15:20:41.056 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-11-14 15:20:41.056 [main] LoadPlanTreePrinter - LoadPlan(entity=com.teamresistance.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=com.teamresistance.entity.User, querySpaceUid=<gen:0>, path=com.teamresistance.entity.User)
+          - CollectionAttributeFetchImpl(collection=com.teamresistance.entity.User.favorites, querySpaceUid=<gen:1>, path=com.teamresistance.entity.User.favorites)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=com.teamresistance.entity.Favorites, querySpaceUid=<gen:2>, path=com.teamresistance.entity.User.favorites.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.teamresistance.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {userID1_1_0_}
+          - JOIN (JoinDefinedByMetadata(favorites)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=com.teamresistance.entity.User.favorites)
+                - SQL table alias mapping - favorites1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_use7_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - Id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=com.teamresistance.entity.Favorites)
+                      - SQL table alias mapping - favorites1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {Id1_0_2_}
+
+[DEBUG] 2019-11-14 15:20:41.057 [main] EntityLoader - Static select for entity com.teamresistance.entity.User [READ]: select user0_.userID as userID1_1_0_, user0_.passWord as passWord2_1_0_, user0_.userName as userName3_1_0_, favorites1_.user_userID as user_use7_0_1_, favorites1_.Id as Id1_0_1_, favorites1_.Id as Id1_0_2_, favorites1_.available as availabl2_0_2_, favorites1_.description as descript3_0_2_, favorites1_.name as name4_0_2_, favorites1_.parkingLotId as parkingL5_0_2_, favorites1_.price as price6_0_2_, favorites1_.user_userID as user_use7_0_2_ from user user0_ left outer join favorites favorites1_ on user0_.userID=favorites1_.user_userID where user0_.userID=?
+[DEBUG] 2019-11-14 15:20:41.085 [main] Loader - Static select for action ACTION_MERGE on entity com.teamresistance.entity.User: select user0_.userID as userID1_1_1_, user0_.passWord as passWord2_1_1_, user0_.userName as userName3_1_1_, favorites1_.user_userID as user_use7_0_3_, favorites1_.Id as Id1_0_3_, favorites1_.Id as Id1_0_0_, favorites1_.available as availabl2_0_0_, favorites1_.description as descript3_0_0_, favorites1_.name as name4_0_0_, favorites1_.parkingLotId as parkingL5_0_0_, favorites1_.price as price6_0_0_, favorites1_.user_userID as user_use7_0_0_ from user user0_ left outer join favorites favorites1_ on user0_.userID=favorites1_.user_userID where user0_.userID=?
+[DEBUG] 2019-11-14 15:20:41.087 [main] Loader - Static select for action ACTION_REFRESH on entity com.teamresistance.entity.User: select user0_.userID as userID1_1_1_, user0_.passWord as passWord2_1_1_, user0_.userName as userName3_1_1_, favorites1_.user_userID as user_use7_0_3_, favorites1_.Id as Id1_0_3_, favorites1_.Id as Id1_0_0_, favorites1_.available as availabl2_0_0_, favorites1_.description as descript3_0_0_, favorites1_.name as name4_0_0_, favorites1_.parkingLotId as parkingL5_0_0_, favorites1_.price as price6_0_0_, favorites1_.user_userID as user_use7_0_0_ from user user0_ left outer join favorites favorites1_ on user0_.userID=favorites1_.user_userID where user0_.userID=?
+[DEBUG] 2019-11-14 15:20:41.090 [main] AbstractEntityPersister - Static SQL for entity: com.teamresistance.entity.Favorites
+[DEBUG] 2019-11-14 15:20:41.090 [main] AbstractEntityPersister -  Version select: select Id from favorites where Id =?
+[DEBUG] 2019-11-14 15:20:41.090 [main] AbstractEntityPersister -  Snapshot select: select favorites_.Id, favorites_.available as availabl2_0_, favorites_.description as descript3_0_, favorites_.name as name4_0_, favorites_.parkingLotId as parkingL5_0_, favorites_.price as price6_0_, favorites_.user_userID as user_use7_0_ from favorites favorites_ where favorites_.Id=?
+[DEBUG] 2019-11-14 15:20:41.090 [main] AbstractEntityPersister -  Insert 0: insert into favorites (available, description, name, parkingLotId, price, user_userID, Id) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-11-14 15:20:41.090 [main] AbstractEntityPersister -  Update 0: update favorites set available=?, description=?, name=?, parkingLotId=?, price=?, user_userID=? where Id=?
+[DEBUG] 2019-11-14 15:20:41.091 [main] AbstractEntityPersister -  Delete 0: delete from favorites where Id=?
+[DEBUG] 2019-11-14 15:20:41.091 [main] AbstractEntityPersister -  Identity insert: insert into favorites (available, description, name, parkingLotId, price, user_userID) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-11-14 15:20:41.091 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7f73ce28]
+[DEBUG] 2019-11-14 15:20:41.094 [main] MetamodelGraphWalker - Visiting attribute path : availableLots
+[DEBUG] 2019-11-14 15:20:41.094 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-11-14 15:20:41.094 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2019-11-14 15:20:41.094 [main] MetamodelGraphWalker - Visiting attribute path : parkingLotId
+[DEBUG] 2019-11-14 15:20:41.094 [main] MetamodelGraphWalker - Visiting attribute path : price
+[DEBUG] 2019-11-14 15:20:41.094 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-11-14 15:20:41.094 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2282400e]
+[DEBUG] 2019-11-14 15:20:41.095 [main] MetamodelGraphWalker - Visiting attribute path : user.favorites
+[DEBUG] 2019-11-14 15:20:41.095 [main] MetamodelGraphWalker - Property path deemed to be circular : user.favorites
+[DEBUG] 2019-11-14 15:20:41.095 [main] MetamodelGraphWalker - Visiting attribute path : user.passWord
+[DEBUG] 2019-11-14 15:20:41.095 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-11-14 15:20:41.095 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-11-14 15:20:41.096 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-11-14 15:20:41.098 [main] LoadPlanTreePrinter - LoadPlan(entity=com.teamresistance.entity.Favorites)
+    - Returns
+       - EntityReturnImpl(entity=com.teamresistance.entity.Favorites, querySpaceUid=<gen:0>, path=com.teamresistance.entity.Favorites)
+          - EntityAttributeFetchImpl(entity=com.teamresistance.entity.User, querySpaceUid=<gen:1>, path=com.teamresistance.entity.Favorites.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.teamresistance.entity.Favorites)
+          - SQL table alias mapping - favorites0_
+          - alias suffix - 0_
+          - suffixed key columns - {Id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.teamresistance.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {userID1_1_1_}
+
+[DEBUG] 2019-11-14 15:20:41.099 [main] EntityLoader - Static select for entity com.teamresistance.entity.Favorites [NONE]: select favorites0_.Id as Id1_0_0_, favorites0_.available as availabl2_0_0_, favorites0_.description as descript3_0_0_, favorites0_.name as name4_0_0_, favorites0_.parkingLotId as parkingL5_0_0_, favorites0_.price as price6_0_0_, favorites0_.user_userID as user_use7_0_0_, user1_.userID as userID1_1_1_, user1_.passWord as passWord2_1_1_, user1_.userName as userName3_1_1_ from favorites favorites0_ left outer join user user1_ on favorites0_.user_userID=user1_.userID where favorites0_.Id=?
+[DEBUG] 2019-11-14 15:20:41.099 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@40ce9049]
+[DEBUG] 2019-11-14 15:20:41.099 [main] MetamodelGraphWalker - Visiting attribute path : availableLots
+[DEBUG] 2019-11-14 15:20:41.099 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-11-14 15:20:41.099 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2019-11-14 15:20:41.099 [main] MetamodelGraphWalker - Visiting attribute path : parkingLotId
+[DEBUG] 2019-11-14 15:20:41.099 [main] MetamodelGraphWalker - Visiting attribute path : price
+[DEBUG] 2019-11-14 15:20:41.099 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-11-14 15:20:41.099 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@65c5bf0e]
+[DEBUG] 2019-11-14 15:20:41.100 [main] MetamodelGraphWalker - Visiting attribute path : user.favorites
+[DEBUG] 2019-11-14 15:20:41.100 [main] MetamodelGraphWalker - Property path deemed to be circular : user.favorites
+[DEBUG] 2019-11-14 15:20:41.100 [main] MetamodelGraphWalker - Visiting attribute path : user.passWord
+[DEBUG] 2019-11-14 15:20:41.100 [main] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-11-14 15:20:41.100 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-11-14 15:20:41.101 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-11-14 15:20:41.101 [main] LoadPlanTreePrinter - LoadPlan(entity=com.teamresistance.entity.Favorites)
+    - Returns
+       - EntityReturnImpl(entity=com.teamresistance.entity.Favorites, querySpaceUid=<gen:0>, path=com.teamresistance.entity.Favorites)
+          - EntityAttributeFetchImpl(entity=com.teamresistance.entity.User, querySpaceUid=<gen:1>, path=com.teamresistance.entity.Favorites.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.teamresistance.entity.Favorites)
+          - SQL table alias mapping - favorites0_
+          - alias suffix - 0_
+          - suffixed key columns - {Id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.teamresistance.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {userID1_1_1_}
+
+[DEBUG] 2019-11-14 15:20:41.102 [main] EntityLoader - Static select for entity com.teamresistance.entity.Favorites [READ]: select favorites0_.Id as Id1_0_0_, favorites0_.available as availabl2_0_0_, favorites0_.description as descript3_0_0_, favorites0_.name as name4_0_0_, favorites0_.parkingLotId as parkingL5_0_0_, favorites0_.price as price6_0_0_, favorites0_.user_userID as user_use7_0_0_, user1_.userID as userID1_1_1_, user1_.passWord as passWord2_1_1_, user1_.userName as userName3_1_1_ from favorites favorites0_ left outer join user user1_ on favorites0_.user_userID=user1_.userID where favorites0_.Id=?
+[DEBUG] 2019-11-14 15:20:41.102 [main] Loader - Static select for action ACTION_MERGE on entity com.teamresistance.entity.Favorites: select favorites0_.Id as Id1_0_0_, favorites0_.available as availabl2_0_0_, favorites0_.description as descript3_0_0_, favorites0_.name as name4_0_0_, favorites0_.parkingLotId as parkingL5_0_0_, favorites0_.price as price6_0_0_, favorites0_.user_userID as user_use7_0_0_ from favorites favorites0_ where favorites0_.Id=?
+[DEBUG] 2019-11-14 15:20:41.102 [main] Loader - Static select for action ACTION_REFRESH on entity com.teamresistance.entity.Favorites: select favorites0_.Id as Id1_0_0_, favorites0_.available as availabl2_0_0_, favorites0_.description as descript3_0_0_, favorites0_.name as name4_0_0_, favorites0_.parkingLotId as parkingL5_0_0_, favorites0_.price as price6_0_0_, favorites0_.user_userID as user_use7_0_0_ from favorites favorites0_ where favorites0_.Id=?
+[DEBUG] 2019-11-14 15:20:41.108 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1ad9b8d3]
+[DEBUG] 2019-11-14 15:20:41.112 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@168ad26f]
+[DEBUG] 2019-11-14 15:20:41.114 [main] MetamodelGraphWalker - Visiting attribute path : availableLots
+[DEBUG] 2019-11-14 15:20:41.114 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-11-14 15:20:41.114 [main] MetamodelGraphWalker - Visiting attribute path : name
+[DEBUG] 2019-11-14 15:20:41.114 [main] MetamodelGraphWalker - Visiting attribute path : parkingLotId
+[DEBUG] 2019-11-14 15:20:41.114 [main] MetamodelGraphWalker - Visiting attribute path : price
+[DEBUG] 2019-11-14 15:20:41.114 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-11-14 15:20:41.114 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2019-11-14 15:20:41.114 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-11-14 15:20:41.118 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-11-14 15:20:41.121 [main] LoadPlanTreePrinter - LoadPlan(collection=com.teamresistance.entity.User.favorites)
+    - Returns
+       - CollectionReturnImpl(collection=com.teamresistance.entity.User.favorites, querySpaceUid=<gen:0>, path=[com.teamresistance.entity.User.favorites])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=com.teamresistance.entity.Favorites, querySpaceUid=<gen:1>, path=[com.teamresistance.entity.User.favorites].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=com.teamresistance.entity.User.favorites)
+          - SQL table alias mapping - favorites0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_use7_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - Id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=com.teamresistance.entity.Favorites)
+                - SQL table alias mapping - favorites0_
+                - alias suffix - 1_
+                - suffixed key columns - {Id1_0_1_}
+
+[DEBUG] 2019-11-14 15:20:41.122 [main] CollectionLoader - Static select for collection com.teamresistance.entity.User.favorites: select favorites0_.user_userID as user_use7_0_0_, favorites0_.Id as Id1_0_0_, favorites0_.Id as Id1_0_1_, favorites0_.available as availabl2_0_1_, favorites0_.description as descript3_0_1_, favorites0_.name as name4_0_1_, favorites0_.parkingLotId as parkingL5_0_1_, favorites0_.price as price6_0_1_, favorites0_.user_userID as user_use7_0_1_ from favorites favorites0_ where favorites0_.user_userID=?
+[DEBUG] 2019-11-14 15:20:41.199 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2019-11-14 15:20:41.199 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2019-11-14 15:20:41.200 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2019-11-14 15:20:41.203 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2019-11-14 15:20:41.203 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2019-11-14 15:20:41.207 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2019-11-14 15:20:41.207 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2019-11-14 15:20:41.209 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@2eb60c71
+[DEBUG] 2019-11-14 15:20:41.211 [main] SessionFactoryRegistry - Registering SessionFactory: 8fe7a5df-2c09-4267-ac73-aa3dc0c534c2 (<unnamed>)
+[DEBUG] 2019-11-14 15:20:41.211 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2019-11-14 15:20:41.319 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2019-11-14 15:20:41.354 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-11-14 15:20:41.354 [main] TransactionImpl - begin
+[DEBUG] 2019-11-14 15:20:41.366 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2019-11-14 15:20:41.369 [main] SQL - insert into favorites (available, description, name, parkingLotId, price, user_userID) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-11-14 15:20:41.419 [main] SqlExceptionHelper - could not execute statement [n/a]
+java.sql.SQLSyntaxErrorException: Unknown column 'user_userID' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:955) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1094) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1042) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1345) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1027) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:410) ~[c3p0-0.9.5.3.jar:0.9.5.3]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:175) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:57) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3112) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3705) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:335) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:292) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:198) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:128) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.saveWithGeneratedOrRequestedId(DefaultSaveOrUpdateEventListener.java:193) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.saveWithGeneratedOrRequestedId(DefaultSaveEventListener.java:38) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.entityIsTransient(DefaultSaveOrUpdateEventListener.java:178) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.DefaultSaveEventListener.performSaveOrUpdate(DefaultSaveEventListener.java:32) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.event.internal.DefaultSaveOrUpdateEventListener.onSaveOrUpdate(DefaultSaveOrUpdateEventListener.java:75) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.fireSave(SessionImpl.java:697) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:689) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at org.hibernate.internal.SessionImpl.save(SessionImpl.java:684) [hibernate-core-5.4.4.Final.jar:5.4.4.Final]
+	at com.teamresistance.persistence.GenericDao.insert(GenericDao.java:72) [classes/:?]
+	at com.teamresistance.service.FavoritesServiceTest.testInsert(FavoritesServiceTest.java:51) [test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:389) [junit-platform-commons-1.0.0.jar:1.0.0]
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:115) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:167) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.execution.ThrowableCollector.execute(ThrowableCollector.java:40) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:163) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:110) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:57) [junit-jupiter-engine-5.0.0.jar:5.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:83) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) [?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) [?:?]
+	at java.util.Iterator.forEachRemaining(Iterator.java:133) [?:?]
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) [?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) [?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) [?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) [?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497) [?:?]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43) [junit-platform-engine-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.0.0.jar:1.0.0]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69) [junit5-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+[WARN ] 2019-11-14 15:20:41.432 [main] SqlExceptionHelper - SQL Error: 1054, SQLState: 42S22
+[ERROR] 2019-11-14 15:20:41.432 [main] SqlExceptionHelper - Unknown column 'user_userID' in 'field list'
