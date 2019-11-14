@@ -22,12 +22,20 @@
                             <table id="myTable" class="table table-dark table-hover">
                                 <thead>
                                     <tr>
-                                        <th>zipcode</th>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Available</th>
                                     </tr>
                                 </thead>
                                 <c:forEach var="place" items="${places}">
                                     <tr>
                                         <td class="tbColumns">${place.id}</td>
+                                        <td class="tbColumns">${place.name}</td>
+                                        <td class="tbColumns">${place.description}</td>
+                                        <td class="tbColumns">${place.price}</td>
+                                        <td class="tbColumns">${place.availableLots}</td>
                                     </tr>
                                 </c:forEach>
                             </table>

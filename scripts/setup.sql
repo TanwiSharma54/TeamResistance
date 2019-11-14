@@ -1,12 +1,5 @@
 create schema favorite_places collate utf8mb4_0900_ai_ci;
 
-create table user
-(
-    user_id int auto_increment
-        primary key,
-    userName int null,
-    passWord int null
-);
 
 create table favorites
 (
@@ -18,7 +11,7 @@ create table favorites
         foreign key (user_id) references user (user_id)
             on update cascade on delete cascade
 );
-================================================
+
 create table user
 (
     user_id int auto_increment

@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-<Context docBase="parkingLots_war" path="/parkingLots_war" reloadable="true">
-=======
 <Context docBase="TeamResistance_war" path="/TeamResistance_war" reloadable="true">
->>>>>>> f08e41b4ad556cf9da4d7082ae7944d22ebb16ed
     <Realm className="org.apache.catalina.realm.JDBCRealm"
            driverName="com.mysql.cj.jdbc.Driver"
-           connectionURL="jdbc:mysql://localhost:3306/parkingLotsDB?user=root&amp;password=student"
+           connectionURL="jdbc:mysql://localhost:3306/favorite_places?user=root&amp;password=student"
            userTable="user" userNameCol="userName" userCredCol="passWord"
            userRoleTable="role" roleNameCol="role_name" >
           <!-- <CredentialHandler

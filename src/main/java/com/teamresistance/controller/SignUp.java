@@ -19,7 +19,7 @@ import java.util.List;
  * A simple servlet to search and return cards in the user's database
  */
 @WebServlet(
-        urlPatterns = {"/search"}
+        urlPatterns = {"/signUp"}
 )
 
 public class SignUp extends HttpServlet {
@@ -37,6 +37,7 @@ public class SignUp extends HttpServlet {
 
         //if user input is provided, return results matching the input
         if (zipInput != null && radInput != null) {
+/*
             try {
 
                 int zipCode = Integer.parseInt(zipInput);
@@ -50,6 +51,7 @@ public class SignUp extends HttpServlet {
             } catch (Exception e) {
                e.printStackTrace();
             }
+*/
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");

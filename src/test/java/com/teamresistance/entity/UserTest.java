@@ -68,7 +68,11 @@ class UserTest {
         String newUserPassword = "openthedoors";
         int newFaveLot = 123;
         User newUser = new User(newUserName, newUserPassword);
-        Favorites newFavorites = new Favorites(newFaveLot, newUser);
+        String name = "Cheaper Seats Parking";
+        String description = "605 W Johnson St, Madison WI 53706";
+        double price = 2.89;
+        int availableLots = 2;
+        Favorites newFavorites = new Favorites(newFaveLot, name, description, price, availableLots, newUser);
         newUser.addFavorites(newFavorites);
         int id = dao.insert(newUser);
         assertNotEquals(0, id);

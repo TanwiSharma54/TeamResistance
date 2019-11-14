@@ -1,6 +1,7 @@
 package com.teamresistance.controller;
 
 import com.teamresistance.entity.Favorites;
+import com.teamresistance.entity.ParkingLot;
 import com.teamresistance.entity.User;
 import com.teamresistance.persistence.GenericDao;
 import com.teamresistance.service.FavoritesService;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.List;
 
@@ -23,7 +25,7 @@ import java.util.List;
  * A simple servlet to search and return cards in the user's database
  */
 @WebServlet(
-        urlPatterns = {"/add"}
+        urlPatterns = {"/addFavorite"}
 )
 
 public class AddServlet extends HttpServlet {
@@ -32,7 +34,9 @@ public class AddServlet extends HttpServlet {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        logger.info("inside add servlet ");
 
         HttpSession session = req.getSession();
         String userName = req.getRemoteUser();
@@ -41,6 +45,8 @@ public class AddServlet extends HttpServlet {
 
         //get user input
         String input = req.getParameter("id");
+        List<ParkingLot> newList = (List<ParkingLot>)req.getAttribute("lots");
+        ParkingLot newLot = new ParkingLot();
 
 
         //if user input is provided, return results matching the input
@@ -49,8 +55,16 @@ public class AddServlet extends HttpServlet {
 
                 int inputID = Integer.parseInt(input);
 
+                for (int i = 0; i < newList.size(); i++) {
+                   if (newList.get(i).getId() == inputID) {
+                       newLot = newList.get(i);
+                   }
+                }
+
                 GenericDao placeDao = new GenericDao(Favorites.class);
-                Favorites newFavorite = new Favorites(inputID, loggedInUser);
+
+
+                Favorites newFavorite = new Favorites(inputID, newLot.getName(), newLot.getDescription(), newLot.getPrice(), newLot.getAvailableLots(),  loggedInUser);
                 placeDao.saveOrUpdate(newFavorite);
 
                 List<Favorites> places = placeDao.getAll();

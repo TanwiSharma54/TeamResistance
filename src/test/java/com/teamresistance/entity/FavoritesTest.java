@@ -53,7 +53,11 @@ class FavoritesTest {
         GenericDao userDao = new GenericDao(User.class);
         User user = (User) userDao.getById(1);
         int newFaveParkingLotID = 789;
-        Favorites newFavorite = new Favorites(newFaveParkingLotID, user);
+        String name = "Quick and Out Parking";
+        String description = "2514 W Johnson St, Madison WI 53715";
+        double price = 2.89;
+        int availableLots = 2;
+        Favorites newFavorite = new Favorites(newFaveParkingLotID, name, description, price, availableLots, user);
         user.addFavorites(newFavorite);
         int id = dao.insert(newFavorite);
         assertNotEquals(0, id);

@@ -1,8 +1,7 @@
 package com.teamresistance.controller;
 
-import com.teamresistance.entity.Favorites;
+import com.teamresistance.entity.ParkingLot;
 import com.teamresistance.service.FavoritesService;
-import com.teamresistance.service.ZipCodesItem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,7 +11,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -44,9 +42,9 @@ public class SearchServlet extends HttpServlet {
                 int radius = Integer.parseInt(radInput);
 
                 FavoritesService newService = new FavoritesService();
-                List<Favorites> places = newService.getParkingLotInfo(zipCode, radius);
+                List<ParkingLot> parkingLotInfoList = newService.getParkingLotInfo(zipCode, radius);
 
-                req.setAttribute("places", places);
+                req.setAttribute("lots", parkingLotInfoList);
 
             } catch (Exception e) {
                e.printStackTrace();

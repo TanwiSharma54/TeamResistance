@@ -15,27 +15,40 @@
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
-            </div>
-            <div class="row">
-                    <c:choose>
-                        <c:when test="${!empty(places)}">
-                            <table id="myTable" class="table table-dark table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>zipcode</th>
-                                    </tr>
-                                </thead>
-                                <c:forEach var="place" items="${places}">
-                                    <tr>
-                                        <td class="tbColumns"><a href="add?param=${card.id}">${place.zipCode}</a></td>
-                                    </tr>
-                                </c:forEach>
-                            </table>
-                        </c:when>
-                        <c:otherwise>
-                            <p class="validations">No zipcodes were found</p>
-                        </c:otherwise>
-                    </c:choose>
+           <!-- </div>
+            <div class="row"> -->
+               <!-- <div class="column">
+                    <img id="parkingLotImage" src="images/compactParking.jpg" class="parkingLot" alt="image of parking lot"/>
+                </div> -->
+                <c:choose>
+                    <c:when test="${!empty(lots)}">
+                        <table id="myTable" class="table table-dark table-hover">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Available</th>
+                                <th>Favorite</th>
+                            </tr>
+                            </thead>
+                            <c:forEach var="lot" items="${lots}">
+                                <tr>
+                                    <td class="tbColumns"><a href="addFavorite?param=${lot.id}">${lot.id}</a></td>
+                                    <td class="tbColumns">${lot.name}</td>
+                                    <td class="tbColumns">${lot.description}</td>
+                                    <td class="tbColumns">${lot.price}</td>
+                                    <td class="tbColumns">${lot.availableLots}</td>
+                                    <td><i class="fas fa-plus">John</i></td>
+                                </tr>
+                            </c:forEach>
+                        </table>
+                    </c:when>
+                    <c:otherwise>
+                        <p class="validations">No parkings were found</p>
+                    </c:otherwise>
+                </c:choose>
             </div>
             <footer class="row">
                 <c:import url="footer.jsp"/>
@@ -51,7 +64,7 @@
                 tr = table.getElementsByTagName("tr");
 
                 for (i = 1; i < tr.length; i++) {
-                    td = tr[i].getElementsByTagName("td")[0];
+                    td = tr[i].getElementsByTagName("td")[1];
 
                     if (td) {
                         txtValue = td.textContent || td.innerText;

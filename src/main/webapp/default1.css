@@ -8,10 +8,18 @@ body {
 }
 
 .jumbotron {
-    background-image: url("images/parkingLots.png");
+    background-image: url("images/parking_hero.jpg");
     width: 100%;
     height: auto;
     margin-bottom: 0px;
+}
+
+#parkingLotImage {
+    width: 100%;
+    height: auto;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 .navbar, #mySearch {
