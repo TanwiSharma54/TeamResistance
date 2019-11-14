@@ -1,8 +1,5 @@
 package com.teamresistance.controller;
 
-import com.teamresistance.entity.Favorites;
-import com.teamresistance.service.FavoritesService;
-import com.teamresistance.service.ZipCodesItem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
