@@ -2,11 +2,11 @@
 
 <head>
     <!--
-           Author: Nhialee Yang
-           Date:   09/25/2019
+           Authors: Dave Quesier,
+           Date:   11/13/2019
           -->
 
-    <title>Yugioh!</title>
+    <title>ParkingLots</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

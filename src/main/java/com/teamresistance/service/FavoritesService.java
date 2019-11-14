@@ -3,6 +3,7 @@ package com.teamresistance.service;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.teamresistance.entity.Favorites;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -13,7 +14,7 @@ import java.util.List;
 
 public class FavoritesService {
 
-    public List<ZipCodesItem> getParkingLotInfo(int zipCode, int radius) throws JsonProcessingException {
+    public List<Favorites> getParkingLotInfo(int zipCode, int radius) throws JsonProcessingException {
 
         String apiKey = "C6duubd0kQKxJEOmFShO87kDSvVP6U2gpTd65fh7wMBironF9up5xyisynI21Ep9";
 
@@ -42,8 +43,37 @@ public class FavoritesService {
             list.add(item);
         }
 
+
+        List<Favorites> places = getFavorites(list);
+
         //return list of zipCodeItems
-        return list;
+        return places;
+    }
+
+    public List<Favorites> getFavorites(List<ZipCodesItem> list) {
+
+        List<Favorites> places = new ArrayList<>();
+
+        String zip = "";
+
+        for (ZipCodesItem zipCode : list) {
+            zip += zipCode.getZipCode() + ",";
+        }
+
+
+
+        System.out.println(zip);
+
+        Client client = ClientBuilder.newClient();
+        WebTarget target =
+                client.target("http://3.130.227.98:8081/parkinglots/" + zip + "");
+
+        //specify the type of data to get back and get the response
+        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
+
+        System.out.println(response);
+
+        return places;
     }
 
 }

@@ -1,5 +1,6 @@
 package com.teamresistance.controller;
 
+import com.teamresistance.entity.Favorites;
 import com.teamresistance.service.FavoritesService;
 import com.teamresistance.service.ZipCodesItem;
 import org.apache.logging.log4j.LogManager;
@@ -42,7 +43,7 @@ public class SignUp extends HttpServlet {
                 int radius = Integer.parseInt(radInput);
 
                 FavoritesService newService = new FavoritesService();
-                List<ZipCodesItem> places = newService.getParkingLotInfo(zipCode, radius);
+                List<Favorites> places = newService.getParkingLotInfo(zipCode, radius);
 
                 req.setAttribute("places", places);
 

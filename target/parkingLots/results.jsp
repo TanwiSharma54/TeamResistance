@@ -27,7 +27,7 @@
                                 </thead>
                                 <c:forEach var="place" items="${places}">
                                     <tr>
-                                        <td class="tbColumns">${place.zipCode}</td>
+                                        <td class="tbColumns"><a href="add?param=${card.id}">${place.zipCode}</a></td>
                                     </tr>
                                 </c:forEach>
                             </table>

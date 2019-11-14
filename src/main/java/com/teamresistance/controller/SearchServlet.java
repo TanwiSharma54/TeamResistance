@@ -44,7 +44,7 @@ public class SearchServlet extends HttpServlet {
                 int radius = Integer.parseInt(radInput);
 
                 FavoritesService newService = new FavoritesService();
-                List<ZipCodesItem> places = newService.getParkingLotInfo(zipCode, radius);
+                List<Favorites> places = newService.getParkingLotInfo(zipCode, radius);
 
                 req.setAttribute("places", places);
 
