@@ -9,7 +9,8 @@
         <property name="connection.username">root</property>
 
         <!--Local -->
-        <property name="connection.password">student</property>
+        <!--<property name="connection.password">student</property> -->
+        <property name="connection.password">guest</property>
 
         <!--AWS -->
         <!--<property name="connection.password">uBUs4XoxU9UsEw</property>-->
