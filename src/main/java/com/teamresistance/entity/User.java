@@ -13,7 +13,7 @@ public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")
-    private int userID;
+    private int id;
 
     @Column(name="userName")
     private String userName;
@@ -42,11 +42,11 @@ public class User {
     }
 
     public int getUserID() {
-        return userID;
+        return id;
     }
 
     public void setUserID(int userID) {
-        this.userID = userID;
+        this.id = userID;
     }
 
     public String getUserName() {

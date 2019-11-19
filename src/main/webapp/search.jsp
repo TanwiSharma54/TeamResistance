@@ -20,7 +20,7 @@
 
                 <div class="form-group">
                     <label for="radius">Please Enter a radius</label>
-                    <input type="radius" class="form-control" id="radius" placeholder="Enter radius" name="radius" required>
+                    <input type="radius" class="form-control" id="radius" placeholder="Enter radius in miles" name="radius" required>
                     <div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
                 </div>

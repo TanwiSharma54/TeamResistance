@@ -11,10 +11,7 @@
    <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
          <li class="nav-item">
-            <a class="nav-link" href="signUp.jsp">SignUp</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="search.jsp">Search</a>
+            <a class="nav-link" href="favorites.jsp">Favorites</a>
          </li>
          <li class="nav-item">
             <a class="nav-link" href="logout">Logout</a>

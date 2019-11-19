@@ -4,6 +4,8 @@ import com.teamresistance.entity.Favorites;
 import com.teamresistance.entity.ParkingLot;
 import com.teamresistance.entity.User;
 import com.teamresistance.persistence.GenericDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import testUtils.Database;
@@ -14,13 +16,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FavoritesServiceTest {
 
+    private final Logger logger = LogManager.getLogger(this.getClass());
     GenericDao dao;
 
     @BeforeEach
     void setUp() {
         dao = new GenericDao(Favorites.class);
         Database database = Database.getInstance();
-        //database.runSQL("cleandb.sql");
+        database.runSQL("cleandb.sql");
     }
 
     @Test
@@ -43,9 +46,9 @@ class FavoritesServiceTest {
         User user = new User("john", "1234");
         userDao.saveOrUpdate(user);
 
-        User newUser = (User)userDao.getById(1);
-        System.out.println(newUser.toString());
-
+        User newUser = (User)userDao.getById(3);
+        System.out.println(newUser.getUserName());
+        logger.info(newUser.getUserName());
 
         int newFaveParkingLotID = 789;
         String name = "Quick and Out Parking";
@@ -53,11 +56,12 @@ class FavoritesServiceTest {
         double price = 2.89;
         int availableLots = 2;
         Favorites newFavorite = new Favorites(newFaveParkingLotID, name, description, price, availableLots, newUser);
-        //user.addFavorites(newFavorite);
+        user.addFavorites(newFavorite);
         int id = dao.insert(newFavorite);
         assertNotEquals(0, id);
         Favorites insertedFavorite = (Favorites) dao.getById(id);
         assertNotNull(insertedFavorite);
         assertEquals(newFaveParkingLotID, insertedFavorite.getParkingLotId());
+
     }
 }

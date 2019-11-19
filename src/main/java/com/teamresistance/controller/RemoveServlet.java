@@ -1,7 +1,9 @@
 package com.teamresistance.controller;
 
+import com.teamresistance.entity.Favorites;
 import com.teamresistance.entity.ParkingLot;
-import com.teamresistance.service.FavoritesService;
+import com.teamresistance.entity.User;
+import com.teamresistance.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,10 +21,10 @@ import java.util.List;
  * A simple servlet to search and return cards in the user's database
  */
 @WebServlet(
-        urlPatterns = {"/search"}
+        urlPatterns = {"/removeFavorite"}
 )
 
-public class SearchServlet extends HttpServlet {
+public class RemoveServlet extends HttpServlet {
 
     //logger
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -30,34 +32,34 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        // Get a session
         HttpSession session = req.getSession();
+        String userName = req.getRemoteUser();
+        GenericDao userDao = new GenericDao(User.class);
+        User loggedInUser = (User) userDao.getByProperty("userName", userName);
 
         //get user input
-        String zipInput = req.getParameter("zipCode");
-        String radInput = req.getParameter("radius");
-
+        String input = req.getParameter("param");
+        System.out.println("the value of the input is " + input);
 
         //if user input is provided, return results matching the input
-        if (zipInput != null && radInput != null) {
+        if (input != null ) {
             try {
 
-                //wrap inputs as Integers
-                int zipCode = Integer.parseInt(zipInput);
-                int radius = Integer.parseInt(radInput);
+                int inputID = Integer.parseInt(input);
 
-                //create instance of FavoritesService and get parkingLot info and store into list
-                FavoritesService newService = new FavoritesService();
-                List<ParkingLot> parkingLotInfoList = newService.getParkingLotInfo(zipCode, radius);
+                GenericDao placeDao = new GenericDao(Favorites.class);
+                Favorites removeFavorite = (Favorites) placeDao.getById(inputID);
+                placeDao.delete(removeFavorite);
+                List<Favorites> places = placeDao.getAll();
+                // //loggedInUser.getFavorites();
 
-                session.setAttribute("lots", parkingLotInfoList);
+                req.setAttribute("places", places);
 
             } catch (Exception e) {
                e.printStackTrace();
             }
         }
-
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/favorites.jsp");
         dispatcher.forward(req, resp);
     }
 }

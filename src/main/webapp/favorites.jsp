@@ -9,13 +9,7 @@
             <div class="row">
                 <c:import url="navbar.jsp"/>
             </div>
-            <div class="row">
-                <div class="form-group">
-                    <input type="text" id="myInput" class="form-control" onkeyup="myFunction()" placeholder="Filter Search Results" title="Type in a card" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
-                </div>
-            </div>
+
             <div class="row">
                     <c:choose>
                         <c:when test="${!empty(places)}">
@@ -27,6 +21,7 @@
                                         <th>Description</th>
                                         <th>Price</th>
                                         <th>Available</th>
+                                        <th>Remove Favorite?</th>
                                     </tr>
                                 </thead>
                                 <c:forEach var="place" items="${places}">
@@ -36,12 +31,13 @@
                                         <td class="tbColumns">${place.description}</td>
                                         <td class="tbColumns">${place.price}</td>
                                         <td class="tbColumns">${place.availableLots}</td>
+                                        <td class="tbColumns"><a href="removeFavorite?param=${place.id}">Remove</a></td></td>
                                     </tr>
                                 </c:forEach>
                             </table>
                         </c:when>
                         <c:otherwise>
-                            <p class="validations">No favorites exist for this user</p>
+                            <p class="validations"><h2>You do not have any items among your favorites</h2></p>
                         </c:otherwise>
                     </c:choose>
             </div>
@@ -49,29 +45,6 @@
                 <c:import url="footer.jsp"/>
             </footer>
         </div>
-
-        <script>
-            function myFunction() {
-                var input, filter, table, tr, td, i, txtValue;
-                input = document.getElementById("myInput");
-                filter = input.value.toUpperCase();
-                table = document.getElementById("myTable");
-                tr = table.getElementsByTagName("tr");
-
-                for (i = 1; i < tr.length; i++) {
-                    td = tr[i].getElementsByTagName("td")[0];
-
-                    if (td) {
-                        txtValue = td.textContent || td.innerText;
-                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                            tr[i].style.display = "";
-                        } else {
-                            tr[i].style.display = "none";
-                        }
-                    }
-                }
-            }
-        </script>
     </body>
 </html>
 

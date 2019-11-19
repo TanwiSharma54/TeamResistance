@@ -9,7 +9,6 @@
             <div class="row">
                 <c:import url="navbar.jsp"/>
             </div>
-            <div class="row">
                 <FORM id="myForm" ACTION="signUp" METHOD="GET">
 
                     <div class="form-group">
@@ -20,16 +19,27 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="password">Please Enter a Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <label for="password">Password
+                        </label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password"
+                               name="password" data-error="Please provide a password."
+                               required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Retype
+                            Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Re-enter password"
+                               name="confirmPassword" equalTo="#password"
+                               data-match="#password"
+                               data-match-error="Confirmation password does not match"
+                               required data-error="Please retype your password.">
+                        <div class="help-block with-errors"></div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Submit</button><br />
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-danger">Clear</button><br>
                 </FORM>
-            </div>
-
             <footer class="row">
                 <c:import url="footer.jsp"/>
             </footer>

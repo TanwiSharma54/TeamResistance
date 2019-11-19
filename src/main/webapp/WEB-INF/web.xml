@@ -18,7 +18,38 @@
   </login-config>
 
 
-  <!-- Protect everything in the adminOnly directory -->
+  <!-- Protect the Login Servlet -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>login</web-resource-name>
+      <url-pattern>/login</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>user</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the index page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>index</web-resource-name>
+      <url-pattern>/index.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>user</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the favorites page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>favorites</web-resource-name>
+      <url-pattern>/favorites.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>user</role-name>
+    </auth-constraint>
+  </security-constraint>
 
   <security-constraint>
     <web-resource-collection>
