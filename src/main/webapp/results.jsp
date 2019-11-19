@@ -35,12 +35,12 @@
                             </thead>
                             <c:forEach var="lot" items="${lots}">
                                 <tr>
-                                    <td class="tbColumns"><a href="addFavorite?param=${lot.id}">${lot.id}</a></td>
+                                    <td class="tbColumns">${lot.id}</td>
                                     <td class="tbColumns">${lot.name}</td>
                                     <td class="tbColumns">${lot.description}</td>
                                     <td class="tbColumns">${lot.price}</td>
                                     <td class="tbColumns">${lot.availableLots}</td>
-                                    <td><i class="fas fa-plus">John</i></td>
+                                    <td class="tbColumns"><a href="addFavorite?param=${lot.id}">Add</a></td>
                                 </tr>
                             </c:forEach>
                         </table>

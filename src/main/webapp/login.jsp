@@ -9,27 +9,27 @@
     <div class="row">
         <c:import url="navbar.jsp"/>
     </div>
-    <!-- Login start-->
-    <div margin="10">
-        <h2 align="center">Log In</h2>
-        </br>
-        </br>
-        <FORM ACTION="j_security_check" METHOD="POST" align="center">
-            <TABLE border="1px solid black" align="center">
-                <TR>
-                    <TD>User name: </TD>
-                    <TD><INPUT TYPE="TEXT" NAME="j_username"> </TD>
-                </TR>
-                <TR>
-                    <TD>Password: </TD>
-                    <TD><INPUT TYPE="PASSWORD" NAME="j_password"></TD>
-                </TR>
-            </TABLE>
-            <INPUT TYPE="SUBMIT" VALUE="Log In">
-        </FORM>
-    </div>
-    <!-- Login-->
+        <FORM id="myForm" ACTION="j_security_check" METHOD="POST">
 
+            <p>Please first login</p>
+
+            <div class="form-group">
+                <label for="j_username">Username:</label>
+                <input type="text" class="form-control" id="j_username" placeholder="Enter username" name="j_username" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="j_password" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <p><a href="signUp.jsp">I do not have an account.</a></p>
+            <button type="submit" class="btn btn-primary" value="log in">Submit</button><br />
+        </FORM>
     <footer class="row">
         <c:import url="footer.jsp"/>
     </footer>

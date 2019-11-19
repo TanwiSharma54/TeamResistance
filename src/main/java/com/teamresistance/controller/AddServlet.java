@@ -36,18 +36,15 @@ public class AddServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        logger.info("inside add servlet ");
-
         HttpSession session = req.getSession();
         String userName = req.getRemoteUser();
         GenericDao userDao = new GenericDao(User.class);
         User loggedInUser = (User) userDao.getByProperty("userName", userName);
 
         //get user input
-        String input = req.getParameter("id");
-        List<ParkingLot> newList = (List<ParkingLot>)req.getAttribute("lots");
+        String input = req.getParameter("param");
+        List<ParkingLot> newList = (List<ParkingLot>)session.getAttribute("lots");
         ParkingLot newLot = new ParkingLot();
-
 
         //if user input is provided, return results matching the input
         if (input != null ) {
@@ -62,12 +59,11 @@ public class AddServlet extends HttpServlet {
                 }
 
                 GenericDao placeDao = new GenericDao(Favorites.class);
-
-
                 Favorites newFavorite = new Favorites(inputID, newLot.getName(), newLot.getDescription(), newLot.getPrice(), newLot.getAvailableLots(),  loggedInUser);
                 placeDao.saveOrUpdate(newFavorite);
+                List<Favorites> places =  placeDao.getAll();
+                 //loggedInUser.getFavorites();
 
-                List<Favorites> places = placeDao.getAll();
 
                 req.setAttribute("places", places);
 
@@ -75,7 +71,6 @@ public class AddServlet extends HttpServlet {
                e.printStackTrace();
             }
         }
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/favorites.jsp");
         dispatcher.forward(req, resp);
     }
