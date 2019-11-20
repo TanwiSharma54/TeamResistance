@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity(name="Key")
-@Table(name="key")
+@Table(name="api_keys")
 public class Key {
 
     @Id
@@ -15,61 +15,30 @@ public class Key {
     @GenericGenerator(name = "native",strategy = "native")
     private int id;
 
-    @Column(name="userName")
-    private String userName;
-
-    @Column(name="passWord")
-    private String passWord;
-
-    @OneToMany (mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Favorites> favorites = new HashSet<>();
+    @Column(name="API_Key")
+    private String apiKey;
 
     public Key() {
 
     }
 
-    public Set<Favorites> getFavorites() {
-        return favorites;
+    public Key(String apiKey) {
+        this.apiKey = apiKey;
     }
 
-    public void setFavorites(Set<Favorites> favorites) {
-        this.favorites = favorites;
-    }
-
-    public Key(String userName, String passWord) {
-        this.userName = userName;
-        this.passWord = passWord;
-    }
-
-    public int getUserID() {
+    public int getKeyID() {
         return id;
     }
 
-    public void setUserID(int userID) {
-        this.id = userID;
+    public void setKeyID(int keyID) {
+        this.id = keyID;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getAPIKey() {
+        return apiKey;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassWord() {
-        return passWord;
-    }
-
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
-    }
-
-    public void addFavorites(Favorites place) {
-        this.favorites.add(place);
-    }
-
-    public void removeFavorites(Favorites place) {
-        this.favorites.remove(place);
+    public void setAPIKey(String apiKey) {
+        this.apiKey = apiKey;
     }
 }
