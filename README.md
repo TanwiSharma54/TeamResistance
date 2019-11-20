@@ -22,7 +22,16 @@
     
 ### User documentation
     <link>
-     
+
+### Api repository
+https://github.com/sudershanpothina/parkinglotapi.git
+
+### Api documentation
+http://3.130.227.98:8081/swagger-ui.html
+
+### Api url 
+http://3.130.227.98:8081/parkinglots
+http://3.130.227.98:8081/parkinglots/{comma delimited zipcodes}      
            
     
 
