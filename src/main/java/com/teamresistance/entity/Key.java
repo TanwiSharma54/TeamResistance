@@ -6,9 +6,9 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity(name="User")
-@Table(name="user")
-public class User {
+@Entity(name="Key")
+@Table(name="key")
+public class Key {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
@@ -24,7 +24,7 @@ public class User {
     @OneToMany (mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Favorites> favorites = new HashSet<>();
 
-    public User() {
+    public Key() {
 
     }
 
@@ -36,7 +36,7 @@ public class User {
         this.favorites = favorites;
     }
 
-    public User(String userName, String passWord) {
+    public Key(String userName, String passWord) {
         this.userName = userName;
         this.passWord = passWord;
     }

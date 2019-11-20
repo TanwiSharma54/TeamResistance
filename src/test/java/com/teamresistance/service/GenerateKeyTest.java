@@ -14,7 +14,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FavoritesServiceTest {
+class GenerateKeyTest {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     GenericDao dao;

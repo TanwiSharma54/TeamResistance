@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FavoritesService {
+public class GenerateKey {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -30,7 +30,7 @@ public class FavoritesService {
 
         //create local variables
         ZipCodesItem items = new ZipCodesItem();
-        List<ZipCodesItem> list = new ArrayList<>();
+        List<ZipCodesItem> list = new ArrayList<ZipCodesItem>();
 
         String format = "json";
         String units = "mile";
