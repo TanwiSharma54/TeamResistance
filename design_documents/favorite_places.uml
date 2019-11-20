@@ -22,10 +22,8 @@
       <point x="46.0" y="49.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="476.5" y="311.0" />
-  <SelectedNodes>
-    <node>dc955daf-e76e-49e4-82de-a45064a7c1e4.TABLE:favorite_places.user</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="1.0" x="378.5" y="254.0" />
+  <SelectedNodes />
   <Categories>
     <Category>Key columns</Category>
     <Category>Columns</Category>
