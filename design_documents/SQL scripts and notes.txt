@@ -1,101 +1,13 @@
-Application context = /IndieProject_war
-
-~~~~~~~~~~~~~~~~~~~~~~~~~
- CREATE TABLE user
- (
-   id        INT AUTO_INCREMENT
-     PRIMARY KEY,
-   first_name VARCHAR(25) NOT NULL,
-   last_name VARCHAR(25) NOT NULL,
-   email VARCHAR(25) NOT NULL,
-   user_name VARCHAR(25) NOT NULL,
-   password VARCHAR(25) NOT NULL,
-   date_registered  datetime NOT NULL,
-   CONSTRAINT user_id_uindex
-   UNIQUE (id),
-   CONSTRAINT user_user_name_uindex
-   UNIQUE (user_name)
- )
-   ENGINE = InnoDB;
-      ~~~~~~~~~~~~~~~~~~~~~~~~~
- CREATE TABLE role
-  (
+CREATE TABLE api_keys
+(
     id        INT AUTO_INCREMENT
-      PRIMARY KEY,
-    role_name VARCHAR(25) NOT NULL,
-    user_name VARCHAR(25) NOT NULL,
-    user_id   INT         NOT NULL,
-    CONSTRAINT role_id_uindex
-    UNIQUE (id),
-    CONSTRAINT role_user_user_id_fk
-    FOREIGN KEY (user_id) REFERENCES user (id)
-      ON UPDATE CASCADE
-      ON DELETE CASCADE
-  )
+        PRIMARY KEY,
+    API_Key VARCHAR(25) NOT NULL,
+    CONSTRAINT keys_id_uindex
+        UNIQUE (id),
+    UNIQUE (API_Key)
+)
     ENGINE = InnoDB;
-
-  CREATE INDEX role_user_user_id_fk
-    ON role (user_id);
-~~~~~~~~~~~~~~~~~~~~~~~~~
- CREATE TABLE usertrips
-  (
-    id        INT AUTO_INCREMENT
-      PRIMARY KEY,
-    user_id   INT         NOT NULL,
-    citylocationcode VARCHAR(70) NOT NULL,
-    rating VARCHAR(25) NOT NULL,
-    comment VARCHAR(1000) NOT NULL,
-    date_registered datetime NOT NULL,
-    CONSTRAINT usertrips_id_uindex
-    UNIQUE (id),
-    FOREIGN KEY (user_id) REFERENCES user (id)
-      ON UPDATE CASCADE
-      ON DELETE CASCADE
-  )
-    ENGINE = InnoDB;
-
-  CREATE INDEX usertrips_user_id_fk
-    ON usertrips (user_id);
-~~~~~~~~~~~~~~~~~~~~~~~~~
- CREATE TABLE pointofinterest
-  (
-    id        INT AUTO_INCREMENT
-      PRIMARY KEY,
-    usertrips_id   INT         NOT NULL,
-    citylocationcode VARCHAR(70) NOT NULL,
-    title VARCHAR(40) NOT NULL,
-    description VARCHAR(70) NOT NULL,
-    comment VARCHAR(1000) NOT NULL,
-    url VARCHAR(200) NOT NULL,
-    date_registered datetime NOT NULL,
-    CONSTRAINT pointofinterest_id_uindex
-    UNIQUE (id),
-    FOREIGN KEY (usertrips_id) REFERENCES usertrips (id)
-      ON UPDATE CASCADE
-      ON DELETE CASCADE
-  )
-    ENGINE = InnoDB;
-
-  CREATE INDEX pointofinterest_usertrips_id_fk
-    ON pointofinterest (usertrips_id);
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-These were used to set up MySQL in AWS:
-INSERT INTO user VALUES (1,'Dave','Queiser', 'dqueiser@gmail.com','dqueiser','Superstrong1','2019-10-13');
-INSERT INTO user VALUES (2,'Mark','Watney', 'mars1@rover.com','mwatney','BotanyPowersRule','2019-10-15 12:34:56');
-INSERT INTO role VALUES (1, 'admin', 'dqueiser', 1);
-INSERT INTO role VALUES (2, 'user', 'mwatney', 2);
-INSERT INTO usertrips VALUES (1,2,'ACIDPLANIT','3', 'A bit barren. Homegrown potatoes are good, but a bit musty.','2019-10-15 12:34:56');
-INSERT INTO pointofinterest VALUES (1,1,'ACIDPLANIT','That Cool Greenhouse', 'A greenhouse which is really old and made of iron and is green.','Definitely a photo spot.','www.somethingiamadeup.com','2019-10-17 12:34:56');
-INSERT INTO pointofinterest VALUES (2,1,'ACIDPLANIT','Pathfinder', 'An old rover','In a pinch, this will save your life.','www.somethingelseiamadeup.com','2019-10-17 12:34:56');
-
-INSERT INTO `user` VALUES (1,'Dave','Queiser', 'dqueiser@gmail.com','dqueiser','Superstrong1','2019-10-13')
-INSERT INTO `user` VALUES (2,'Mark','Watney', 'mars1@rover.com','mwatney','BotanyPowersRule','2019-10-15 12:34:56')
-INSERT INTO dqtravelspotsdb.role (id, role_name, user_name, user_id) VALUES (1, 'admin', 'dqueiser', 1);
-INSERT INTO dqtravelspotsdb.role (id, role_name, user_name, user_id) VALUES (2, 'user', 'mwatney', 2);
-INSERT INTO `usertrips` VALUES (1,2,'ACIDPLANIT','3', 'A bit barren. Homegrown potatoes are good, but a bit musty.','2019-10-15 12:34:56')
-INSERT INTO `pointofinterest` VALUES (1,1,'ACIDPLANIT','That Cool Greenhouse', 'A greenhouse which is really old and made of iron and is green.','Definitely a photo spot.','www.somethingiamadeup.com','2019-10-17 12:34:56')
-INSERT INTO `pointofinterest` VALUES (2,1,'ACIDPLANIT','Pathfinder', 'An old rover','In a pinch, this will save your life.','www.somethingelseiamadeup.com','2019-10-17 12:34:56')
 
 
 

@@ -20,10 +20,12 @@ public class ZipCode{
 	}
 
 	@Override
- 	public String toString(){
-		return 
+ 	public String toString() {
+		//return "zip_codes " + zipCodes;
+		return
 			"ZipCode{" + 
 			"zip_codes = '" + zipCodes + '\'' + 
 			"}";
-		}
+
+	}
 }
