@@ -18,7 +18,7 @@ Tasks Completed:
 
 4.Create project structure in intellij and push.
 
-5.Add link to list of indie projects in student repo.
+5.Add link to list of team projects in student repo.
 
 ***********************************************************
 
