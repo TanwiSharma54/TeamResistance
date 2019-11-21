@@ -21,7 +21,7 @@
  ![](design_documents/tables.png)
     
 ### User documentation
- [User Documentation](user_documentation.md)
+[User Documentation](design_documents/user_documentation.md)
 
 ### Api repository
 https://github.com/sudershanpothina/parkinglotapi.git
